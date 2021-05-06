@@ -313,8 +313,8 @@ public class updateEmployee extends javax.swing.JFrame {
     public void updatedata(){
            try
         {  
-            Class.forName("com.mysql.jdbc.Driver");  
-            Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.28/aismidterm", "aismidterm", "S3cr3t");  
+//            Class.forName("com.mysql.jdbc.Driver");  
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/jframe_java_crud", "root", "");  
             Statement stmt = con.createStatement();              
              
             String query = "UPDATE employee SET firstname='"+this.fnameTextField.getText()+"', middlename='"+this.mnameTextField.getText()+"', lastname='"+this.lnameTextField.getText()+"', age='"+this.ageTextField.getText()+"', gender='"+this.genderTextField.getText()+"', employeeAddress='"+this.addressTextField.getText()+"' WHERE id='"+this.employeeIDTextField.getText()+"'";

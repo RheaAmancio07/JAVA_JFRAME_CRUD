@@ -231,8 +231,8 @@ public class retrieveEmployee extends javax.swing.JFrame {
         
         int count = 0;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.28/aismidterm", "aismidterm", "S3cr3t");
+//            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/jframe_java_crud", "root", "");
             Statement stmt = con.createStatement();
             
             ResultSet datas = stmt.executeQuery("select * from employee");

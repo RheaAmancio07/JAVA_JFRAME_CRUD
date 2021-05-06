@@ -201,8 +201,8 @@ public class deleteEmployee extends javax.swing.JFrame {
    
      try
         {  
-            Class.forName("com.mysql.jdbc.Driver");  
-            Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.28/aismidterm", "aismidterm", "S3cr3t");  
+//            Class.forName("com.mysql.jdbc.Driver");  
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/jframe_java_crud", "root", "");  
             Statement stmt = con.createStatement();              
              
             String query = "DELETE FROM employee WHERE id = "+this.employeeIDTextField.getText()+"";

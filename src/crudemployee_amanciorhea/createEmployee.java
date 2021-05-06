@@ -255,8 +255,8 @@ public class createEmployee extends javax.swing.JFrame {
 
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         try {
-            Class.forName("com.mysql.jdbc.Driver"); //load the driver
-            Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.28/aismidterm", "aismidterm", "S3cr3t"); //establishes the connection
+//            Class.forName("com.mysql.jdbc.Driver"); //load the driver
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/jframe_java_crud", "root", ""); //establishes the connection
             Statement stmt = (Statement) con.createStatement();
             String firstname = fnameTextField.getText();
             String middlename = mnameTextField.getText();
